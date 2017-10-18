@@ -17,7 +17,7 @@ const routes = [
         component: load('Board')
       },
       {
-        path: 'fullboard/:boardId',
+        path: ':boardId',
         component: load('Fullboard')
       }
     ]

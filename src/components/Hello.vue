@@ -56,7 +56,7 @@
       <router-view />
     </div> -->
     <div v-if="id">
-      hello world
+      <router-view />
     </div>
     <div v-else>
       <q-parallax class="relative-position" :src="'statics/seaBackground.jpg'" :speed="1" :height="800">

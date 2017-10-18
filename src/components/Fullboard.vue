@@ -1,11 +1,18 @@
 <template>
     <!-- Don't drop "q-app" class -->
     <div class="fullboard">
-       <h1>Hello world</h1>
+        <q-parallax class="relative-position" :src="'statics/seaBackground.jpg'" :speed="1" :height="800">
+            <h1>Hello world</h1>
+            <h1>
+                {{id}}
+            </h1>
+        </q-parallax>
+
     </div>
 </template>
 
 <script>
+    import { QParallax } from 'quasar'
     export default {
         name: 'fullboard',
         // data() {
@@ -13,14 +20,17 @@
 
         //     }
         // }
-        mounted(){
+        mounted() {
             // this.$store.dispatch('getFullboard', this.$route.params.boardId)
 
         },
-        computed:{
-            id(){
+        computed: {
+            id() {
                 this.$route.params.boardId
             }
+        },
+        components: {
+            QParallax
         }
     }
 </script>
