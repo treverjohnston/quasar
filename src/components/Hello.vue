@@ -4,6 +4,11 @@
       <q-btn flat @click="$refs.layout.toggleLeft()">
         <q-icon name="menu" />
       </q-btn>
+      <router-link :to="'/'">
+        <q-btn flat color="white">
+          <q-icon name="home" />
+        </q-btn>
+      </router-link>
 
       <q-toolbar-title>
         <!-- Quasar App
